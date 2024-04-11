@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手语翻译服务</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding-top: 56px;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .hero-section {
+            padding: 50px 0;
+            background-color: #e9e9e9;
+            text-align: center;
+        }
+
+        .gradio-container {
+            margin: 30px auto;
+            width: 80%;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">手语翻译服务</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#guidance">操作指南</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">关于我们</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">联系方式</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <h1>欢迎使用在线手语翻译服务</h1>
+        <p>突破语言障碍，让交流更简单</p>
+    </div>
+
+    <div class="gradio-container">
+        <!-- Gradio App Integration -->
+        <iframe src="https://de08-42-247-44-116.ngrok-free.app" style="width:100%; height:80vh; border:none;"></iframe>
+    </div>
+
+    <section id="guidance" class="container my-5">
+        <h2>操作指南</h2>
+        <p>操作步骤：
+            在上传界面通过点击“上传”或“录制”按键，上传需要翻译的手语视频或直接录制手语视频。
+            可以对上传的手语视频进行剪辑操作。
+            点击“Submit”将提交视频等待翻译结果。
+            如果需要重新上传视频，请点击“Clear”清空原视频重新上传。
+            等待界面右侧显示翻译结果。
+        </p>
+    </section>
+    
+    <section id="about" class="container my-5">
+        <h2>关于我们</h2>
+        <p>我们致力于提供连续手语识别和翻译，以及多语言的手语翻译功能，专注于给听障人士提供良好服务。</p>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <h2>联系方式</h2>
+        <p>如有任何问题，请通过以下方式联系我们。欢迎您提供宝贵的意见。</p>
+        <!-- Contact details here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 手语翻译服务. 版权所有.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
