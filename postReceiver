@@ -1,0 +1,19 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    $to = "your-email@example.com"; // 将此处替换为你的邮箱地址
+    $subject = "New Message from Website";
+    $body = "Name: $name\nEmail: $email\nPhone: $phone\nSubject: $subject\nMessage: $message";
+
+    if (mail($to, $subject, $body)) {
+        echo "<p>消息已成功发送。</p>";
+    } else {
+        echo "<p>发送消息时出现错误。</p>";
+    }
+}
+?>
